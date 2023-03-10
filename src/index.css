@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animateGradient {
+  animation: gradient 5s linear infinite forwards;
+}
+
+@keyframes gradient {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.gradient {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background-size: 200%;
+  background-clip: text;
+  animation: animatedGradient 5s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animatedGradient {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.star {
+  animation: stars 200ms linear;
+}
+
+@keyframes stars {
+  from {
+    rotate: 0deg;
+    scale: 0;
+  }
+  to {
+    rotate: 360deg;
+    scale: 1;
+  }
+}
