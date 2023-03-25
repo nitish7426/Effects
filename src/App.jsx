@@ -1,16 +1,22 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import AnimatedModal from "./components/AnimatedModal";
 import AnimatedStars from "./components/AnimatedStars";
+import Dropdown from "./components/Dropdown";
 import MouseTrailer from "./components/MouseTrailer";
-import Navbar from "./components/Navbar";
+import OpenSidebar from "./components/OpenSidebar";
+import Sidebar from "./components/Sidebar";
 import TextEffect from "./components/TextEffect";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Layout from "./pages/Layout";
 
 const App = () => {
-  return <MouseTrailer />;
+  return (
+    <div>
+      {/* <AnimatedModal /> */}
+      {/* <Dropdown /> */}
+      {/* <Sidebar /> */}
+      {/* <OpenSidebar /> */}
+    </div>
+  );
 };
 
 export default App;
